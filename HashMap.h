@@ -4,7 +4,7 @@ using namespace std;
 
 template <typename KeyType, typename ValueType, class Hash = hash<KeyType>>
 class HashMap {
-private:
+private: 
     vector<vector<pair<pair<KeyType, ValueType>, size_t>>> data;
     vector<pair<size_t, size_t>> elements;
     Hash Hasher;
